@@ -57,7 +57,7 @@ var config = {
           
           {
               context: ['/DataCollection/**'],
-              target: 'http://localhost:8080',
+              target: ' http://52.66.151.69:8080',
               secure: false,
               changeOrigin: true,
           },
