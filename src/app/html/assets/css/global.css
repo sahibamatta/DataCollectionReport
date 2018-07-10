@@ -1,0 +1,225 @@
+p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1;
+}
+*,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  /* close commented backslash hack */
+
+  body {
+      font-size: 62.5%;
+      line-height: 1;
+      color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 10px;
+  }
+  /*
+  * Global Form
+  */
+  .form-wrap {
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+  }
+  select {
+      width: 100%;
+      display: block;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      padding: 5px 10px;
+      font-size: 14px;
+      line-height: 20px;
+      background: #fff;
+      border-radius: 0;
+      border: 1px solid #ccc;
+  }
+ .form-wrap .form-title{
+      margin-bottom: 5px;
+  }
+  input[type="text"],input[type="password"],input[type="number"],input[type="date"] {
+    font-size: 16px;
+    line-height: 1;
+    color: #3c3c3c;
+    display: block;
+    letter-spacing: 0.2px;
+    background: #fff;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 5px 10px
+  }
+  input[type="submit"] {
+    border-radius: 2px;
+    text-transform: uppercase;
+    border: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    background: #0084d4;
+    text-align: center;
+    padding: 12px 15px;
+    display: block;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  input[type="submit"]:hover {
+      background: #026daf;
+  }
+
+  input[type="yes"] {
+    border-radius: 2px;
+    text-transform: uppercase;
+    border: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    color: #1e254a;
+    background: #fddc2c;
+    text-align: center;
+    padding: 12px 15px;
+    display: block;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  input[type="yes"]:hover {
+      background: #FBC800;
+  }
+  input[type="checkbox"] {
+      float: left;
+      margin-right: 5px;
+  }
+  .error {
+      color: #f00;
+      margin: 8px 0 8px;
+      font-size: 80%;
+  }
+  .success {
+      color: #008000;
+      margin: 10px 0;
+      text-align: center;
+  }
+  /*
+  * Header Starts Here
+  */
+  .header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+  }
+  .top-header {
+      background: #0b3e69;  
+  }
+  .brands {
+      float:left;
+      color: #eee;
+      text-shadow: #777777 0 1px 0;
+      display: block;
+      font-size: 20px;
+      font-weight: 200;
+      padding: 10px 20px;
+      text-decoration: none;
+      outline: none;
+  }
+  .dashboard-nav {
+      float: right;
+      padding-top: 12px;
+  }
+  .dashboard-nav ul li {
+      float: left;
+  }
+  .dashboard-nav ul li a {
+    color: #eee;
+    text-shadow: #ccc 0 0 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .sub-header {
+      display: none;
+  }
+  /*
+  * Footer Starts Here
+  */
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+      padding: 15px;
+      text-align: center;
+      background: #fff;
+      -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1), 0 -1px 10px rgba(0,0,0,0.1);
+      -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1),0 -1px 10px rgba(0,0,0,0.1);
+      box-shadow: inset 0 1px 0 rgba(0,0,0,0.1), 0 -1px 10px rgba(0,0,0,0.1);
+  }
+  .footer p {
+      color: #777;
+      font-size:12px;
+      margin: 0;
+  }
+
+  .termsx {
+
+    overflow-y: scroll;
+  
+    height: 300px;
+  
+    width: 100%;
+  
+    border: 1px solid #DDD;
+  
+    padding: 10px;
+  
+  }
+  .styleTitle {
+    font-size: x-large;
+}
+
+  .styleBody {
+    font-size: small;
+}
+
+
+  
+  

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PropertyMap - CreateProperty</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" type="text/css"/>
+        <link rel="stylesheet" href="./assets/css/global.css" type="text/css"/>
+        <link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <!-- wrapper starts here -->
+        <div id="wrapper">
+            <!-- header starts here -->
+            <header class="header">
+                <!-- top-header starts here -->
+                <div class="top-header">
+                    <div class="container clearfix">
+                        <a href="index.html" class="brands">FABHOTELS.COM</a>
+                        <nav class="dashboard-nav">
+                            <ul class="clearfix">
+                                <li> <a href="javascript:void(0);"> Logout (User Name) </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- top-header ends here -->
+                <!-- sub-header starts here -->
+                <div class="sub-header">
+                    <div class="container clearfix">
+                    </div>
+                </div>
+                <!-- sub-header ends here -->
+            </header>
+            <!-- header ends here -->
+            <!-- content starts here -->
+            <div class="content">
+                <div class="container clearfix">
+                    <div class="main-content">
+                        <div class="property-form">
+                            <h1 class="page-title">Create Property</h1>
+                            <form name="" method="" action="">
+                                <div class="form-wrap">
+                                    <label class="form-title">Property Name <sup> * </sup></label>
+                                    <input type="text" name="" />
+                                </div>
+                                <div class="form-wrap">
+                                        <input name="" id="fh-property" type="checkbox">
+                                        <label class="form-title" for="fh-property">Is It FH Property?</label>
+                                </div>
+                                <div class="form-wrap">
+                                        <label class="form-title"> City </label>
+                                        <select>
+                                            <option> Noida </option>
+                                            <option> Delhi </option>
+                                            <option> Gurugram </option>
+                                        </select>
+                                </div>
+                                <div class="form-wrap latlang-wrap clearfix">
+                                        <label class="form-title">Lattitude & Longitude </label>
+                                        <input type="text" name="" />
+                                        <span><a href="javascript:void(0)" id="open-map"><img src="./assets/images/map-icon.png" alt="map marker" /></a></span>
+                                </div>
+                                <div class="form-wrap">
+                                        <label class="form-title"> Franchisee </label>
+                                        <select>
+                                            <option> Franchisee1 </option>
+                                            <option> Franchisee2 </option>
+                                            <option> Franchisee3 </option>
+                                        </select>
+                                </div>
+                                <div class="form-wrap">
+                                        <label class="form-title">Goibibo ID </label>
+                                        <input type="text" name="" />
+                                </div>
+                                <div class="form-wrap">
+                                        <label class="form-title">MMT ID </label>
+                                        <input type="text" name="" />
+                                </div>
+                                <div class="form-wrap">
+                                        <label class="form-title">OYO ID </label>
+                                        <input type="text" name="" />
+                                </div>
+                                <div class="form-wrap">
+                                        <label class="form-title">Treebo ID </label>
+                                        <input type="text" name="" />
+                                </div>
+                                <div class="form-wrap">
+                                        <input name="" id="status" type="checkbox">
+                                        <label for="status">Status</label>
+                                </div>
+                                <input type="submit" value="create">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content ends here -->
+            <!-- footer starts here -->
+            <footer class="footer">
+                <div class="main-page">
+                    <p>&copy; 2018 Casa2 Stays Pvt. Ltd. All Rights Reserved.</p>
+                </div>
+            </footer>
+            <!-- footer ends here -->
+        </div>
+        <!-- wrapper ends here -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="map"></div>
+            </div>
+        </div>
+        <script src="./assets/js/jquery-3.2.1.js"></script>
+        <script language=javascript src='http://maps.google.com/maps/api/js?key=AIzaSyAITxCoyNPuWf4UoiiNsDHKTOuaqmhtECk'></script>
+        <script src="./assets/js/map.js"></script>
+    </body>
+</html>
+
