@@ -24,7 +24,10 @@ export class UpdateUserMetadata extends React.Component {
             dateFrom: "",
             dateFromDiv: "",
             dateTo: "",
-            propertyData: { hotelAmenities: [], roomData: [], amenitiesData: [], additionalInformation: {} },
+            propertyData: {
+                hotelAmenities: [], roomData: [], amenitiesData: [], additionalInformation: {},
+                propertyRating: {}
+            },
             dateToDiv: "",
             createDiv: "",
             errorDiv: "",
@@ -44,9 +47,9 @@ export class UpdateUserMetadata extends React.Component {
         this.getRoomdata = this.getRoomdata.bind(this);
         this.getAmenitiesData = this.getAmenitiesData.bind(this);
         this.getAdditionalInfomation = this.getAdditionalInfomation.bind(this);
+        this.getPropertyRating = this.getPropertyRating.bind(this);
 
     }
-
 
     populatePropertiesBetweenDates() {
 
@@ -305,6 +308,30 @@ export class UpdateUserMetadata extends React.Component {
         return rows;
     }
 
+    getPropertyRating() {
+        console.log("in getPropertyRating");
+        var rows = [];
+        var x = JSON.stringify(this.state.propertyData.propertyRating);
+
+        rows.push(
+            <tr key="1">
+                <td >{this.state.propertyData.propertyRating.ambience}</td>
+                <td>{this.state.propertyData.propertyRating.diningArea}</td>
+                <td >{this.state.propertyData.propertyRating.facade}</td>
+                <td>{this.state.propertyData.propertyRating.gymSpaOrPool}</td>
+                <td >{this.state.propertyData.propertyRating.location}</td>
+                <td>{this.state.propertyData.propertyRating.parking}</td>
+                <td>{this.state.propertyData.propertyRating.receptionSize}</td>
+                <td>{this.state.propertyData.propertyRating.roomAmenities}</td>
+                <td >{this.state.propertyData.propertyRating.rooms}</td>
+                <td>{this.state.propertyData.propertyRating.total}</td>
+
+            </tr >
+        );
+
+        return rows;
+    }
+
 
 
     getPropertyIdAndNames() {
@@ -322,7 +349,7 @@ export class UpdateUserMetadata extends React.Component {
                         value={key} onChange={(e) => this.hideUnhideDiv(e)} />
                         {this.state.data[key]}</li>);
                     i++;
-                    console.log("i is::"+i);
+                    console.log("i is::" + i);
                 }
             }
         }
@@ -503,6 +530,27 @@ export class UpdateUserMetadata extends React.Component {
                                         </thead>
                                         <tbody>
                                             {this.getAdditionalInfomation()}
+
+                                        </tbody>
+                                    </table>
+                                    <br />
+
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th >Ambience</th>
+                                                <th >Dining Area</th>
+                                                <th >Facade</th>
+                                                <th >Gym Spa Or Pool</th>
+                                                <th >Location</th>
+                                                <th >Parking</th>
+                                                <th >Reception Size</th>
+                                                <th >Rooms</th>
+                                                <th >Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {this.getPropertyRating()}
 
                                         </tbody>
                                     </table>
