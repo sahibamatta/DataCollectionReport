@@ -312,26 +312,25 @@ export class UpdateUserMetadata extends React.Component {
         console.log("in getPropertyRating");
         var rows = [];
         var x = JSON.stringify(this.state.propertyData.propertyRating);
+        if (this.state.propertyData.propertyRating != null) {
+            rows.push(
+                <tr key="1">
+                    <td >{this.state.propertyData.propertyRating.ambience}</td>
+                    <td>{this.state.propertyData.propertyRating.diningArea}</td>
+                    <td >{this.state.propertyData.propertyRating.facade}</td>
+                    <td>{this.state.propertyData.propertyRating.gymSpaOrPool}</td>
+                    <td >{this.state.propertyData.propertyRating.location}</td>
+                    <td>{this.state.propertyData.propertyRating.parking}</td>
+                    <td>{this.state.propertyData.propertyRating.receptionSize}</td>
+                    <td>{this.state.propertyData.propertyRating.roomAmenities}</td>
+                    <td >{this.state.propertyData.propertyRating.rooms}</td>
+                    <td>{this.state.propertyData.propertyRating.total}</td>
 
-        rows.push(
-            <tr key="1">
-                <td >{this.state.propertyData.propertyRating.ambience}</td>
-                <td>{this.state.propertyData.propertyRating.diningArea}</td>
-                <td >{this.state.propertyData.propertyRating.facade}</td>
-                <td>{this.state.propertyData.propertyRating.gymSpaOrPool}</td>
-                <td >{this.state.propertyData.propertyRating.location}</td>
-                <td>{this.state.propertyData.propertyRating.parking}</td>
-                <td>{this.state.propertyData.propertyRating.receptionSize}</td>
-                <td>{this.state.propertyData.propertyRating.roomAmenities}</td>
-                <td >{this.state.propertyData.propertyRating.rooms}</td>
-                <td>{this.state.propertyData.propertyRating.total}</td>
-
-            </tr >
-        );
-
+                </tr >
+            );
+        }
         return rows;
     }
-
 
 
     getPropertyIdAndNames() {
